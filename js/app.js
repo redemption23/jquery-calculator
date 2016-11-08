@@ -12,6 +12,7 @@ $(document).ready(function(){
     if ($(this).text() === 'C' || $(this).text() === '=') {
       clear.on('click', function(){
       calcScreen.empty();
+      console.log('clearing screen');
       });
     } else {
       calcScreen.append($(this).text());
